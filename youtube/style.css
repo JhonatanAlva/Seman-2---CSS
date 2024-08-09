@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.encabezado {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img img {
+    width: 40px;
+    height: 40px;
+}
+
+.buscar-container {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-buscar {
+    display: flex;
+    margin-bottom: 10px;
+    height: 34px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+.buscar-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.buscar-container .search, .buscar-container .mic {
+    padding: 7.2px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.buscar-container .mic {
+    border-left: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+.botones button{
+    background-color: #ece7e7;
+    border: none;
+    margin: 0px 0px 10px 0px;
+    padding: 7px 0px 2px 0px;
+    height: 30px;
+    width: 90%;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botones button:hover{
+    background-color: #ccc;
+}
+
+.botones button:active{
+    background-color: black;
+    color: white;
+}
+
+.botonesi{
+    border: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 5px;
+    background-color: #ededed;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botonesi:hover{
+    background-color: #ccc;
+}
+
+.botonesi:active{
+    background-color: black;
+    color: white;
+}
